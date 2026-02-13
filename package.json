@@ -1,0 +1,28 @@
+{
+  "name": "typst2docx",
+  "version": "1.0.0",
+  "description": "Generate DOCX files from Typst templates and JSON data via Pandoc",
+  "type": "module",
+  "bin": {
+    "typst2docx": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev:cli": "ts-node src/cli.ts",
+    "dev:server": "ts-node src/server.ts"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "execa": "^9.3.0",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/multer": "^1.4.12",
+    "@types/node": "^22.10.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
